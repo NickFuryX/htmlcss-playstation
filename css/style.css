@@ -1,0 +1,22 @@
+.bg-black {
+  background-color: black;
+}
+
+.header-top img {
+  width: 90px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.jumbo {
+  background-image: url("../img/returnal-listing-thumb-01-ps5.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
