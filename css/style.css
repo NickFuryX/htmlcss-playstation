@@ -16,7 +16,7 @@
   margin-top: 100px;
   background-image: url("../img/jumbo-bg.png");
   width: 100vw;
-  height:80vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -71,10 +71,31 @@ header {
   border-bottom: 1.5px solid rgb(0 109 198);
 }
 
-#it-takes{
+#it-takes {
   background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
 }
 
+.game-card {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.game-card .card {
+  background-color: transparent;
+  border: none;
+}
+
+.game-card img {
+  border-radius: 20px;
+}
+
+.game-card .card-body {
+  padding-left: 0 !important;
+}
+
+.ps-plus {
+  background-color: rgb(190 188 187);
+}
 /* font size personali */
 .fs-7 {
   font-size: 0.9rem;
