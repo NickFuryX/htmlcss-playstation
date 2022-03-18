@@ -19,13 +19,14 @@
   height:80vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 .jumbo {
@@ -89,4 +90,10 @@ header {
 }
 .col-half-offset {
   margin-left: 3.3%;
+}
+
+@media screen and (min-width: 1401px) {
+  body .container {
+    max-width: calc(100vw - 4vw);
+  }
 }
