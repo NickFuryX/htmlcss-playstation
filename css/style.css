@@ -105,6 +105,14 @@ header {
   column-gap: 30px;
 }
 
+.plus-btn{
+  background-color: rgb(212	213	215	)!important;
+}
+
+.now-btn{
+  background-color: white!important;
+}
+
 /* font size personali */
 .fs-7 {
   font-size: 0.9rem;
@@ -122,8 +130,12 @@ header {
   width: 10%;
 }
 
-.w-15{
+.w-15 {
   width: 15%;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 footer {
@@ -131,26 +143,25 @@ footer {
   padding-top: 70px;
 }
 
-.my-footer{
+.my-footer {
   color: white;
 }
 
-.svg-white{
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(205%) contrast(101%);
+.svg-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg)
+    brightness(205%) contrast(101%);
   z-index: 100;
 }
 
-.my-footer ul{
+.my-footer ul {
   list-style-type: none;
   padding-left: 100px;
 }
 
-.my-footer ul li a{
+.my-footer ul li a {
   text-decoration: none;
   color: white;
 }
-
-
 
 @media screen and (min-width: 1401px) {
   body .container {
