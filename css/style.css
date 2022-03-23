@@ -135,6 +135,10 @@ header {
   width: 15%;
 }
 
+.w-35 {
+  width: 35%;
+}
+
 .fw-700 {
   font-weight: 700;
 }
@@ -183,6 +187,9 @@ body .container {
 @media screen and (max-width: 1399px) {
   .jumbo img {
     width: 70%;
+  }
+  #it-takes img {
+    width: 50%;
   }
   .jumbo h2 {
     width: 100% !important;
