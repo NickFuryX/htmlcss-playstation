@@ -1,297 +1,323 @@
-.bg-black {
-  background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* COLORS */
+:root{
+    --black:#000000;
+    --darkgrey:#2e2e2e;
+    --blue:#0b6cff;
+    --red: #cd3d0f;
+}
+.white{
+    fill: white;
+    color:white;
+}
+.bg-red{
+    background-color:#cd3d0f;
+}
+.bg-light-black{
+    background-color: #303030;
+}
+.blue{
+    color:#0b6cff;
+}
+.bg-blue{
+    background-color: #00439c;
+}
+.bg-dark-blue{
+    background-color: #161c3b;
+}
+.grey{
+    color: grey;
+}
+.bg-grey{
+    background-color: grey;
+}
+.bg-light-grey{
+    background-color: lightgray;
+}
+.black{
+    color: black;
+}
+/* /COLORS */
 
-
-.header-top img {
-  width: 90px;
-  cursor: pointer;
-  padding-right: 10px;
+/* NAVBAR */
+.nav-top{
+    background-color: var(--black);
 }
-
-.dropdown-toggle::after {
-  display: none !important;
-}
-
-.jumbo {
-  margin-top: 100px;
-  background-image: url("../img/jumbo-bg.png");
-  width: 100vw;
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-
-.jumbo {
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.jumbo img {
-  width: 20%;
-}
-
-.jumbo div p {
-  width: 25%;
-}
-
-.game-list img {
-  border-radius: 10%;
-}
-
-.accessory-list {
-}
-
-.accessory-list img {
-  width: 50%;
-}
-
-.my-vertical-align {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.my-not-active {
-  opacity: 0.8;
-}
-
-.my-active {
-  border-bottom: 1.5px solid rgb(0 109 198);
-}
-
-#it-takes {
-  background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
-}
-
-.game-card {
-  background-color: rgb(31, 31, 31);
-  color: white;
-}
-
-.game-card .card {
-  background-color: transparent;
-  border: none;
-}
-
-.game-card img {
-  border-radius: 20px;
-}
-
-.game-card .card-body {
-  padding-left: 0 !important;
-}
-
-.ps-plus {
-  background-color: rgb(190 188 187);
-}
-
-.ps-now {
-  background-color: rgb(22 28 59);
-}
-
-.follow div {
-  column-gap: 30px;
-}
-
-.plus-btn {
-  background-color: rgb(212 213 215) !important;
-}
-
-.now-btn {
-  background-color: white !important;
-}
-
-/* font size personali */
-.fs-7 {
-  font-size: 0.9rem;
-}
-.fs-8 {
-  font-size: 0.8rem;
-}
-.fs-9 {
-  font-size: 0.7rem;
-}
-.fs-10 {
-  font-size: 0.6rem;
-}
-.w-10 {
-  width: 10%;
-}
-
-.w-15 {
-  width: 15%;
-}
-
-.w-35 {
-  width: 35%;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
-footer {
-  background-color: rgb(0 67 156);
-  padding-top: 70px;
-}
-
-.my-footer {
-  color: white;
-}
-
-.svg-white {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg)
-    brightness(205%) contrast(101%);
-  z-index: 100;
-}
-
-.my-footer ul {
-  list-style-type: none;
-  padding-left: 100px;
-}
-
-.my-footer ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-body .container {
-  max-width: calc(100vw - 4vw);
-}
-
-/* media query  */
-@media screen and (min-width: 1401px) {
-  body .container {
-    max-width: calc(100vw - 4vw);
-  }
-  .link-list {
+#logo-sony{
     justify-content: flex-end;
-  }
+    height: 15px;
 }
-
-/* media query md  */
-
-@media screen and (max-width: 1399px) {
-  .jumbo img {
-    width: 70%;
-  }
-  #it-takes img {
-    width: 50%;
-  }
-  .jumbo h2 {
-    width: 100% !important;
-    font-size: 2.6rem !important;
-  }
-  .jumbo div p {
+nav{
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.4));
+}
+.dropdown-toggle::after{
+    display: none;
+}
+li a.show i.fa-chevron-down::before{
+    transform: rotate(180deg);
+}
+.my_button{
+    border-radius: 10px;
+    margin:10px 5px;
+}
+li a.show i.fa-chevron-down{
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+.my_dropdown_container{
+    position:relative;
+}
+.my_dropdown_li{
+    position:static;
+}
+.my_dropdown_ul{
+    transition: 0.3s;
+    border: none;
+}
+.my_dropdown_ul[data-bs-popper]{
+    margin-top: 0;
+    border-radius: 0;
     width: 100%;
-  }
-
-  .link-list {
-    padding-top: 2rem;
-    justify-content: flex-start;
-    column-gap: 100px;
-  }
-
-  .link-list ul {
-    padding-left: 50px;
-  }
-
-  .fa-globe {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+}
+div.collapse.navbar-collapse>img{
+   width: 30px;
+   padding-left: 5px;
 }
 
-/* media query md  */
 
-@media screen and (max-width: 767px) {
-  .jumbo img {
-    width: 55%;
-  }
-
-  .acc-type {
-    display: none;
-  }
-
-  .accessory-list img {
-    padding-bottom: 15px;
-  }
-
-  .accessory-list div div {
-    justify-content: flex-start !important;
-    margin-bottom: 20px;
-  }
-
-  .accessory-list {
-    margin-bottom: -100px;
-  }
-
-  .old-gen {
-    margin-bottom: 30px;
-  }
-
-  .side-img {
-    display: none;
-  }
-
-  .ps-plus,
-  .ps-now {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .link-list {
-    flex-direction: column;
-  }
-
-  .follow img {
-    width: 40%;
-  }
-
-  .follow .d-flex {
-    flex-wrap: wrap;
-    row-gap: 20px;
-  }
+.nav_li_dropdown_items{
+    color: var(--blue);
+    list-style-type: disc;
+    cursor: pointer;
+}
+.my_dropdown_ul .my_button{
+    transition:0.1s;
 }
 
-/* dropdown  */
-
-.dropdown {
-  position: static !important;
+.my_dropdown_ul .my_button:hover{
+    outline: 2px solid #0b6cff;
+    outline-offset: 2px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .animate {
+      animation-duration: 0.7s;
+      -webkit-animation-duration: 0.6s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
   
-
-
-}
-
-.dropdown-menu.show {
-  border: 0px !important;
-  border-radius: 0px !important;
-  margin-top: 0px !important;
-  width: 100% !important;
-  animation: animation;
-  animation-duration: 2s;
-  overflow: hidden;
-  background-color: white;
-  display: flex!important;
-  flex-direction:column;
-  justify-content: center;
-}
-.dropdown-item{
-  display: flex!important;
-  justify-content: center;
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
   
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(-2rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+  
+/* /NAVBAR */
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* GENERAL */
+.debug{
+ border: 1px solid black;
+}
+
+/* /GENERAL */
+/* SECTION1 */
+section#jumbotron{
+    margin-top: 90px;
+}
+#jumbotron{
+    background-image: url("../img/jumbo-bg.png");
+    width: 100%;
+    padding-top: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+/* SECTION1 */
+
+/* SECTION2 */
+#game-1{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+/* /SECTION2 */
+#jumbotron-ps-store{
+    padding-top: 100px;
+    background-image: url("../bonus/img/right-image.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* HOVERS */
+.img-wrapper:hover i{
+    opacity: 1;
+    cursor: pointer;
+}
+/* HOVER CARD GAME */
+div.col-6.col-sm-4.col-lg-2{
+    border-radius: 30px;
+    filter: opacity(80%);
+    transition: top ease 0.3s;
+    top: 0;
+    position: relative;
+}
+div.col-6.col-sm-4.col-lg-2:hover{
+    cursor: pointer;
+    filter:opacity(100%);
+    top: -5px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.4));
+}
+div.col-6.col-sm-4.col-lg-2 img:hover{
+    outline: 2px solid #0b6cff;
+    outline-offset: 3px;
+}
+div.col-6.col-sm-4.col-lg-2 img{
+    border-radius: 20px
+}
+/* / HOVER CARD GAME */
+
+div.container-fluid img.card-img-top{
+    border-radius: 20px;
+}
+p.card-text{
+    font-size: 15px;
+}
+div.container-fluid img.card-img-top:hover{
+    filter: brightness(110%);
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+div.container-fluid img.card-img-top{
+    transition: 0.3s;
+    filter: brightness(90%);
+    filter: drop-shadow(0px 0px 5px #0000006b);
+}
+
+.btn{
+    transition: 0.05s;
+}
+.btn:hover{ 
+    color: white;
+    outline: 2px solid #0b6cff;
+    outline-offset: 3px;
+}
+
+/* HOVER ACCESSORY PS5 */
+div.col-4.col-md-2.mb-3 img{
+    opacity: 50%;
+    transition: 0.1s;
+}
+div.col-4.col-md-2.mb-3:hover{
+    cursor: pointer;
+    opacity: 100%;
+    outline: 3px solid #0b6cff;
+    border-radius: 10px;
+}
+div.col-4.col-md-2.mb-3:hover img{
+    opacity: 100%;
+}
+/* / HOVER ACCESSORY PS5 */
+
+/* HOVERS SOCIAL */
+div.col-6.col-sm-3:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+div.col-6.col-sm-3{
+    transition: 0.3s;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.4));
+}
+/* /HOVER SOCIAL */
+
+/* HOVER DISCOUNT */
+div.col-12.col-md-4.pt-3{
+    transition: 0.3s;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.4));
+}
+div.col-12.col-md-4.pt-3:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+/* / HOVER DISCOUNT */
+/* HOVER IMAGES */
+div.col-6.d-none img:hover{
+    cursor: pointer;
+    filter: drop-shadow(10px 5px 5px #00000067);
+}
+div.col-6.d-none img{
+    transition:ease-in-out 0.2s;
+}
+
+div.col-6.d-none.d-lg-flex img{
+    cursor: pointer;
+    transition:ease-in-out 0.2s;
+}
+div.col-6.d-none.d-lg-flex:hover{
+    filter: contrast(115%);
+}
+/* FOOTER */
+ul.white{
+    list-style: none;
+}
+/* /FOOTER */
 
